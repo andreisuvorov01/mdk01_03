@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id = "@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment1"
+        android:name="com.example.fragment.vubor_porod"
+        android:layout_width="match_parent"
+        android:layout_height="394dp"
+        android:layout_gravity="top"
+        tools:layout="@layout/fragment_vubor_porod" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment2"
+        android:layout_width="match_parent"
+        android:name="com.example.fragment.opisanie"
+        android:layout_height="331dp"
+        android:layout_gravity="bottom"
+        tools:layout="@layout/fragment_opisanie" />
+
+</FrameLayout>

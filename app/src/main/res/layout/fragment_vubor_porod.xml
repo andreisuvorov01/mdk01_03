@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vubor_porod">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vubor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id = "@+id/labrador1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/labrador"
+            android:onClick="labrador"
+            tools:layout_editor_absoluteX="95dp"
+            tools:layout_editor_absoluteY="190dp" />
+
+        <Button
+            android:id = "@+id/taksa1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Taksa"
+            android:onClick="taksa"
+            tools:layout_editor_absoluteX="95dp"
+            tools:layout_editor_absoluteY="190dp" />
+
+        <Button
+            android:id = "@+id/pudel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pudel"
+            android:onClick="pudel"
+            tools:layout_editor_absoluteX="95dp"
+            tools:layout_editor_absoluteY="190dp" />
+    </TableLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
